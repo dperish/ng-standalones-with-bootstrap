@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "cd ./strappy-app && npm i -g @angular/cli@17.3.2 && npm i",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
