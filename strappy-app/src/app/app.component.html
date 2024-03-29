@@ -8,32 +8,25 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" href="home">Home
+          <a class="nav-link" routerLinkActive="active" routerLink="home">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" href="about">About</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" href="contact">Contact</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="contact">Contact</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-            aria-expanded="false">Dropdown</a>
+            aria-expanded="false">Display Mode</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+            <button class="dropdown-item" (click)="changeTheme('light')">Light</button>
+            <button class="dropdown-item" (click)="changeTheme('dark')">Dark</button>
           </div>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
